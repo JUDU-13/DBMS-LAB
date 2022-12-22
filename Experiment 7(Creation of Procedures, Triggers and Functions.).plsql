@@ -64,9 +64,6 @@ END;
 -- ---------------------------------------------------------------------------------------------------- --
 
 
--- ---------------------------------------------------------------------------------------------------- --
-
-
 DECLARE
 V_NAME EMPLOYEE.NAME%TYPE;
 V_ID EMPLOYEE.ID%TYPE:=&EMP_ID;
@@ -92,6 +89,7 @@ END;
 -- NAME:Ram
 
 -- PL/SQL procedure successfully completed.
+
 
 -- ---------------------------------------------------------------------------------------------------- --
 -- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX --
@@ -119,6 +117,29 @@ END;
 /
 
 -- OUTPUT: Function created.
+
+
+-- ---------------------------------------------------------------------------------------------------- --
+
+
+DECLARE
+N NUMBER;
+S NUMBER;
+BEGIN
+N:=&N;
+S:=FACT(N);
+DBMS_OUTPUT.PUT_LINE('FACTORIAL OF '||N||'IS: '||S);
+END;
+/
+
+-- OUTPUT:
+
+-- Enter value for n: 5
+-- old   5: N:=&N;
+-- new   5: N:=5;
+-- FACTORIAL OF 5IS: 120
+
+-- PL/SQL procedure successfully completed.
 
 
 -- ---------------------------------------------------------------------------------------------------- --
