@@ -143,3 +143,10 @@ END;
 
 
 -- ---------------------------------------------------------------------------------------------------- --
+
+
+-- Write a function to return the net BASIC given the employee number.
+
+ALTER TABLE EMPLOYEE ADD COMMISION NUMBER(5);
+
+-- OUTPUT: Table altered.
