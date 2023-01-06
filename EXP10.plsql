@@ -1,0 +1,21 @@
+SELECT CEIL(10.6) FROM DUAL;
+
+Select floor(10.6) FROM DUAL;
+
+Select round(10.66) FROM DUAL;
+
+Select upper('name') FROM DUAL;
+
+Select INITCAP('HELLO world') FROM DUAL;
+
+SELECT SUBSTR('Hello,World!', 7, 5) FROM dual;
+
+SELECT LENGTH('Hello, World!') FROM dual;
+
+SELECT CURRENT_DATE FROM dual;
+
+SELECT MONTHS_BETWEEN(TO_DATE('2021-09-01', 'YYYY-MM-DD'), TO_DATE('2021-01-01', 'YYYY-MM-DD')) FROM dual;
+
+SELECT NEXT_DAY(TO_DATE('2023-01-06', 'YYYY-MM-DD'), 'MONDAY') FROM dual;
+
+SELECT TO_CHAR(12.678, '99.99') FROM dual;
