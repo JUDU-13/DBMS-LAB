@@ -22,4 +22,3 @@ select e.name as "Employee_Name",m.name as "Manager_Name" from Employee e inner 
 select deptid as "DEPARTMENT",avg(basic) as "AVG_SAL" from Employee group by deptid;
 select max(basic) as "MAXIMUM_SALARY" from Employee;
 select deptid as "DEPARTMENT",count(ID) as "NO_OF_EMPLOYEES" from Employee group by deptid;
-
