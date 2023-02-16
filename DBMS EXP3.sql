@@ -1,9 +1,15 @@
 alter table Employee add DA float;
+
 alter table Employee add HRA float;
+
 alter table Employee add NET_SALARY float;
+
 update Employee set DA = 0.075*BASIC;
+
 update Employee set HRA = 0.09*BASIC;
+
 update Employee set NET_SALARY = BASIC+DA+HRA;
+
 select ID,NAME,DESIG,DEPTID,BASIC,DA,HRA,NET_SALARY from Employee;
 select ID,NAME,DESIG,DEPTID,BASIC from Employee order by basic desc;
 select distinct desig as "DIFFERENT_DESIGNATIONS" from Employee;
