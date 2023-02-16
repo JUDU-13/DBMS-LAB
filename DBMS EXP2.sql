@@ -57,11 +57,17 @@ Commit;
 SET-2
 
 Select count(distinct DEPTID) as "NO_OF_DEPARTMENT" from EMPLOYEE;
+
 select distinct desig from EMPLOYEE;
+
 select count(distinct desig) as "NO_OF_DESIGNATIONS" from EMPLOYEE;
+
 select max(basic) as "MAXIMUM_SALARY_OF_FEMALE" from EMPLOYEE where sex='F';
+
 select* from employee where ((desig='MANAGER' or desig='ANALYST') and DEPTID=2);
+
 select desig,basic from employee where name='RUBY';
+
 alter table employee add join_date date;
 UPDATE employee SET JOIN_DATE='28-mar-2000' WHERE ID=101;
 UPDATE employee SET JOIN_DATE='28-jan-2001' WHERE ID=102;
@@ -70,7 +76,8 @@ UPDATE employee SET JOIN_DATE='11-jan-1996' WHERE ID=115;
 UPDATE employee SET JOIN_DATE='20-dec-2010' WHERE ID=121;
 UPDATE employee SET JOIN_DATE='16-apr-2011' WHERE ID=123;
 UPDATE employee SET JOIN_DATE='13-sep-1998' WHERE ID=127;
- UPDATE employee SET JOIN_DATE='27-jul-2015' WHERE ID=156;
+UPDATE employee SET JOIN_DATE='27-jul-2015' WHERE ID=156;
+
 select* from employee;
 select* from employee order by join_date desc;
 select* from employee order by join_date asc;
