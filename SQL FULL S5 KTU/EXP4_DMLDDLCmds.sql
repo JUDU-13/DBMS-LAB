@@ -198,6 +198,4 @@ select deptid, dname, city from department;
 
 select  name from employee e, department  d where e.city = d.city and e.dept_id = d.deptid;
 
--- or
-
 select name from (employee natural join department) where city = city and dept_id = deptid;
